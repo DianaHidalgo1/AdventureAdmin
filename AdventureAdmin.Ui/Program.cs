@@ -1,7 +1,6 @@
 using System.Configuration;
 using AdventureAdmin.Data.Context;
 using AdventureAdmin.Ui.Product;
-using AdventureAdmin.Ui.ScrapReason;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -38,7 +37,5 @@ static class Program
         services.AddTransient<MainForm>();
         services.AddTransient<ProductList>();
         services.AddTransient<ProductForm>();
-        services.AddTransient<ScrapReasonList>();
-        services.AddTransient<ScrapReasonForm>();
     }
 }
