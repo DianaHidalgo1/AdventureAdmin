@@ -7,6 +7,8 @@ namespace AdventureAdmin.Data.Context;
 
 public partial class AdventureWorksContext : DbContext
 {
+    public IEnumerable<Person> Persons;
+
     public AdventureWorksContext()
     {
     }

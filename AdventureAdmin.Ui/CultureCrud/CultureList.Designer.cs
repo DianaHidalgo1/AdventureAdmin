@@ -1,6 +1,6 @@
-﻿namespace AdventureAdmin.Ui.Culture
+﻿namespace AdventureAdmin.Ui.CultureCrud
 {
-    partial class CultureForm
+    partial class CultureList
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // CultureForm
+            // dataGridView1
+            // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 41);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(592, 306);
+            dataGridView1.TabIndex = 0;
+            // 
+            // CultureList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "CultureForm";
-            Text = "CultureForm";
-            Load += CultureForm_Load;
+            ClientSize = new Size(606, 350);
+            Controls.Add(dataGridView1);
+            Name = "CultureList";
+            Text = "CultureList";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dataGridView1;
     }
 }

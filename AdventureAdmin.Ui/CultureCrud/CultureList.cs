@@ -6,18 +6,13 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AdventureAdmin.Ui.Culture
+namespace AdventureAdmin.Ui.CultureCrud
 {
-    public partial class CultureForm : Form
+    public partial class CultureList : Form
     {
-        public CultureForm()
+        public CultureList()
         {
             InitializeComponent();
-        }
-
-        private void CultureForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
