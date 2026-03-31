@@ -30,8 +30,10 @@ public class CultureService (
             .ToListAsync();
     }
 
-    public Task<bool> Guardar(Culture entidad)
+    public async Task<bool> Guardar(Culture entidad)
     {
-        throw new NotImplementedException();
+        await context.Cultures.AddAsync(entidad);
+        var cantidad = await context.SaveChangesAsync();
+        return cantidad > 0;
     }
 }
